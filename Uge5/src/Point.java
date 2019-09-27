@@ -1,6 +1,6 @@
 public class Point {
-    int x;
-    int y;
+    private int x;
+    private int y;
     public Point(int x, int y) {
         this.x = x;
         this.y = y;
@@ -9,12 +9,8 @@ public class Point {
         return "(" + x + "," + y + ")";
     }
     public boolean equals(Point p) {
-        if (x == p.x && y == p.y) {
-            return true;
-        }
-        return false;
+        return x == p.x && y == p.y;
     }
-
     public void move(int dx, int dy) {
         x += dx;
         y += dy;

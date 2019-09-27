@@ -13,8 +13,8 @@ public class middedlvaerdiOgSpredning {
             mean += arrayDouble[i];
         }
         mean /= arrayDouble.length;
-        for (int i=0; i < arrayDouble.length; i++){
-            deviation += Math.pow(arrayDouble[i]-mean, 2);
+        for (double v : arrayDouble) {
+            deviation += Math.pow(v - mean, 2);
         }
         deviation = Math.sqrt(1.0/arrayDouble.length*deviation);
         System.out.println("Mean: " + mean);

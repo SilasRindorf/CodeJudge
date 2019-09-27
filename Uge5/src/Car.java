@@ -1,7 +1,7 @@
 public class Car {
-    String brand;
-    String licenseplate;
-    String color;
+    private String brand;
+    private String licenseplate;
+    private String color;
     public Car(String brand, String licenseplate, String color) {
         this.brand = brand;
         this.licenseplate = licenseplate;
@@ -29,13 +29,9 @@ public class Car {
         return '[' + licenseplate + ']' + ' '  + color + ' ' + brand;
     }
     public boolean equals(Car c1) {
-        if (c1.licenseplate == licenseplate)
-            return true;
-        return false;
+        return c1.licenseplate.equals(licenseplate);
     }
     public boolean alike(Car c2) {
-        if (brand == c2.brand && color == c2.color)
-            return true;
-        return false;
+        return brand.equals(c2.brand) && color.equals(c2.color);
     }
 }

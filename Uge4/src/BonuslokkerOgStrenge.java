@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class BonusLøkkerogStrenge {
+public class BonuslokkerOgStrenge {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         char[] inputChar = scan.nextLine().toCharArray();

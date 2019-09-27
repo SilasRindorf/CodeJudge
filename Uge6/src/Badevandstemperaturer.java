@@ -3,20 +3,20 @@ public class Badevandstemperaturer {
         System.out.println("Maksimum: " + maks(args));
         System.out.println("Antal fald: " + antalfald(args));
     }
-    public static int maks(String[] badetempS){
+    private static int maks(String[] badetempS){
         int[] badetemp = new int[badetempS.length];
         for (int i = 0; i < badetemp.length; i++){
             badetemp[i] = Integer.parseInt(badetempS[i]);
         }
         int maks = badetemp[0];
-        for (int i=0; i < badetemp.length; i++){
-            if (maks < badetemp[i]){
-                maks = badetemp[i];
+        for (int value : badetemp) {
+            if (maks < value) {
+                maks = value;
             }
         }
         return maks;
     }
-    public static int antalfald(String[] badetempS){
+    private static int antalfald(String[] badetempS){
         int drop = 0;
         int[] badetemp = new int[badetempS.length];
         for (int i = 0; i < badetemp.length; i++){
