@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CodeJudge.iml" filepath="$PROJECT_DIR$/CodeJudge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Uge4/Uge4.iml" filepath="$PROJECT_DIR$/Uge4/Uge4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Uge5/Uge5.iml" filepath="$PROJECT_DIR$/Uge5/Uge5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Uge6/Uge6.iml" filepath="$PROJECT_DIR$/Uge6/Uge6.iml" />
+    </modules>
+  </component>
+</project>
