@@ -6,6 +6,5 @@ class ModifierTest {
     static String string5;
     final String string6 = "";
     public ModifierTest(){
-
     }
 }

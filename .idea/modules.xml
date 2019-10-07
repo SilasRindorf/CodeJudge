@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Uge7/8a/Uge7/8a.iml" filepath="$PROJECT_DIR$/Uge7/8a/Uge7/8a.iml" />
       <module fileurl="file://$PROJECT_DIR$/CodeJudge.iml" filepath="$PROJECT_DIR$/CodeJudge.iml" />
       <module fileurl="file://$PROJECT_DIR$/Extra/Extra.iml" filepath="$PROJECT_DIR$/Extra/Extra.iml" />
       <module fileurl="file://$PROJECT_DIR$/Uge1/Uge1.iml" filepath="$PROJECT_DIR$/Uge1/Uge1.iml" />
@@ -10,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/Uge4/Uge4.iml" filepath="$PROJECT_DIR$/Uge4/Uge4.iml" />
       <module fileurl="file://$PROJECT_DIR$/Uge5/Uge5.iml" filepath="$PROJECT_DIR$/Uge5/Uge5.iml" />
       <module fileurl="file://$PROJECT_DIR$/Uge6/Uge6.iml" filepath="$PROJECT_DIR$/Uge6/Uge6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Uge7-8a/Uge7-8a.iml" filepath="$PROJECT_DIR$/Uge7-8a/Uge7-8a.iml" />
     </modules>
   </component>
 </project>
