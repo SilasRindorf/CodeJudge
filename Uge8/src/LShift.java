@@ -2,13 +2,11 @@ import java.util.Scanner;
 public class LShift {
     public static void main(String[] args) {
         int[] ints = parseInput();
-        int[] destInts = new int[ints.length ];
-        destInts[ints.length-1] = ints[0];
-        for (int i=0; i <ints.length-1; i++){
-            destInts[i] = ints[i+1];
-        }
+        int[] intsDest = new int[ints.length ];
+        intsDest[ints.length-1] = ints[0];
+        System.arraycopy(ints, 1, intsDest, 0, ints.length - 1);
         for (int i = 0; i < ints.length; i++) {
-            System.out.print(destInts[i] + " ");
+            System.out.print(intsDest[i] + " ");
         }
     }
 
