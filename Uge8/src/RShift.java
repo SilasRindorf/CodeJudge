@@ -3,10 +3,7 @@ public class RShift {
     public static void main(String[] args) {
         int[] ints = parseInput();
         int[] intsDest = new int[ints.length-1];
-        //TODO Fill in logic
-        for (int i = 0; i < intsDest.length; i++) {
-            intsDest[i] = ints[i];
-        }
+        System.arraycopy(ints, 0, intsDest, 0, intsDest.length);
         int var = ints[ints.length-1];
         for (int i = 0; i < var; i++) {
             for (int j = 0; j < intsDest.length; j++) {
@@ -18,10 +15,6 @@ public class RShift {
             System.arraycopy(intsDest, 0, ints, 0, intsDest.length);
 
         }
-        //System.arraycopy(intsDest, 0, intsDest, 1, intsDest.length-1);
-
-        //System.arraycopy(ints, 1, intsDest, 0, ints.length - 1);
-        //TODO Print the result to console
         for (int i:intsDest) {
             System.out.print(i + " ");
         }
