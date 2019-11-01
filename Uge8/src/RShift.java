@@ -23,7 +23,6 @@ public class RShift {
         for (int i : intsDest) {
             System.out.print(i + " ");
         }
-
     }
 
     private static int[] parseInput() {
