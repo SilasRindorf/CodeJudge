@@ -1,3 +1,5 @@
+package DTU_Personer;
+
 public class Ansat extends Person {
     private String institutnavn;
     public Ansat(String navn, String institutnavn){

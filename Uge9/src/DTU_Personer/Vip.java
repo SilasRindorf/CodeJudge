@@ -1,3 +1,5 @@
+package DTU_Personer;
+
 public class Vip extends Ansat {
     private String[] kurser;
 

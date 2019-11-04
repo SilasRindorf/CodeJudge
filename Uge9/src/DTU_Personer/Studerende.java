@@ -1,3 +1,5 @@
+package DTU_Personer;
+
 public class Studerende extends Person {
     private String studienummer;
     public Studerende(String navn, String studienummer){
