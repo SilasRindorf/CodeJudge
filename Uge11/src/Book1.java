@@ -8,12 +8,11 @@ public class Book1 extends ReadingMatter {
     }
     public String toString()
     {
-        return getTitle() + "\t" + getIsbn() + "\t" + author;
+        return super.toString() + "\t" + author;
     }
     public void content()
     {
-        System.out.println ("Title: " + getTitle());
-        System.out.println ("ISBN: " + getIsbn());
+        super.content();
         System.out.println ("Author: " + author);
     }
 }

@@ -8,14 +8,13 @@ public class Magazine1 extends ReadingMatter {
 
     public String toString()
     {
-        String result = getTitle() + "\t" + getIsbn() + "\t" + weeknumber;
+        String result = super.toString() + "\t" + weeknumber;
         return result;
     }
 
     public void content()
     {
-        System.out.println ("Title: " + getTitle());
-        System.out.println ("ISBN: " + getIsbn());
+        super.content();
         System.out.println ("Weeknumber: " + weeknumber);
     }
 }
