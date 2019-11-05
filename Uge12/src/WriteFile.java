@@ -6,7 +6,7 @@ public class WriteFile {
         try{
             br = new BufferedWriter(new FileWriter(file));
         } catch (Exception e){
-            System.out.println("Error: " + e);
+            System.out.println(e);
         }
 
     }
