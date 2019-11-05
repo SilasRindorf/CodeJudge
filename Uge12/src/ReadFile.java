@@ -1,32 +1,28 @@
-import sun.org.mozilla.javascript.internal.EcmaError;
-
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
+
 public class ReadFile {
     private BufferedReader br;
-    public ReadFile(String file){
-        try{
-            br = new BufferedReader(new FileReader(file));
-        } catch (Exception e){
-            System.out.println(e);
-        }
+    public void openFile(String file) throws FileNotFoundException {
+        br = new BufferedReader(new FileReader(file));
+
     }
-    public int[] ReadInts(){
+    public int[] ReadInts() throws IOException {
         int[] temp;
-        try {
-            int lines = 0;
-            while (br.readLine() != null) lines++;
-            temp = new int[lines];
-            int i = 0;
-            for (String line; (line = br.readLine()) !=null;) {
-                temp[i] = Integer.parseInt(line);
-                i++;
-            }
-            return temp;
-        } catch (Exception e){
-            System.out.println(e);
+        int lines = 0;
+        while (br.readLine() != null) lines++;
+        temp = new int[lines];
+        int i = 0;
+        for (String line; (line = br.readLine()) != null; ) {
+            temp[i] = Integer.parseInt(line);
+            i++;
         }
-        return new int[]{0};
+        return temp;
+    }
+    public void closeFile() throws IOException {
+        this.br.close();
     }
 
 }
