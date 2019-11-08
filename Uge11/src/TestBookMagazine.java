@@ -1,4 +1,4 @@
-public class Test {
+public class TestBookMagazine {
     public static void main(String[] args) {
         ReadingMatter[] materials = new ReadingMatter[3];
         materials[0] = new ReadingMatter("Winnie-the-Pooh",140361219L);

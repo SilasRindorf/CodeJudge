@@ -2,12 +2,14 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-
 public class ReadFile {
     private BufferedReader br;
-    public void openFile(String file) throws FileNotFoundException {
-        br = new BufferedReader(new FileReader(file));
-
+    public void openFile(String file) {
+        try {
+            br = new BufferedReader(new FileReader(file));
+        } catch (Exception e){
+            System.out.println("Filen kan ikke åbnes");
+        }
     }
     public int[] ReadInts() throws IOException {
         int[] temp;
